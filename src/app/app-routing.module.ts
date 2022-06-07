@@ -6,6 +6,11 @@ import { TasksComponent } from './components/tasks/tasks.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'task',
+    pathMatch: 'full'
+  },
+  {
     path: 'task',
     component: TasksComponent
   },
